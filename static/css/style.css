@@ -1,0 +1,121 @@
+body {
+	background-color: #F5F5DC;
+	-webkit-text-stroke: 2px black;
+	color: white;
+	font-family: 'Fredoka One', cursive;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #f9a825;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.header_link {
+	color: white;
+	font-family: 'Fredoka One', cursive;
+	-webkit-text-stroke: 2px black;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+.header_link:hover {
+	color: white;
+}
+
+.admin_link {
+	color: white;
+	font-family: 'Fredoka One', cursive;
+	-webkit-text-stroke: 2px black;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.admin_link:hover {
+	color: white;
+}
+
+
+/* slider */
+
+#slider {
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+#polosa {
+	width: 2000px;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+
+}
+
+#polosa img {
+	float: left;
+	
+}
+
+#polosa::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.slide-single {
+	width: 500px;
+	height: 500px;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
+
+#slider_left>img, #slider_right>img {
+	height: 50px;
+	width: 50px; 
+
+	border-radius: 50%;
+	padding: auto;
+	margin-top: 250px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	color: white;
+}
+
+.products {
+	margin: 50px auto;
+
+}
+
+.card_product {
+	height: 120px;
+	width: 350px;
+	margin-bottom: 20px;
+	background-color: #f9a825;
+	padding: 10px;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
+.img_product {
+	height: 100px;
+	width: 100px;
+	float: left;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
+.form_login {
+	height: 300px;
+	width: 500px;
+	margin: 50px;
+}
+
+.admin_block {
+	margin-bottom: 20px;
+}

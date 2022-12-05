@@ -1,0 +1,56 @@
+user_index:
+    path: /admin/api/index
+    methods: GET
+    controller: App\Controller\IndexController::main
+
+slider_index:
+    path: /admin/api/slider
+    methods: GET
+    controller: App\Controller\SliderController::index
+
+slider_show:
+    path: /admin/api/slider/{id}
+    methods: GET
+    controller: App\Controller\SliderController::show
+
+slider_store:
+    path: /admin/api/slider
+    methods: POST
+    controller: App\Controller\SliderController::store
+
+slider_edit:
+    path: /admin/api/slider/{id}
+    methods: PUT
+    controller: App\Controller\SliderController::edit
+
+slider_delete:
+    path: /admin/api/slider/{id}
+    methods: DELETE
+    controller: App\Controller\SliderController::delete
+
+
+
+products_index:
+    path: /admin/api/products
+    methods: GET
+    controller: App\Controller\ProductsController::index
+
+products_show:
+    path: /admin/api/products/{id}
+    methods: GET
+    controller: App\Controller\ProductsController::show
+
+products_store:
+    path: /admin/api/products
+    methods: POST
+    controller: App\Controller\ProductsController::store
+
+products_edit:
+    path: /admin/api/products/{id}
+    methods: PUT
+    controller: App\Controller\ProductsController::edit
+
+products_delete:
+    path: /admin/api/products/{id}
+    methods: DELETE
+    controller: App\Controller\ProductsController::delete

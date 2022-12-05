@@ -1,0 +1,40 @@
+version: "3.7"
+
+services:
+  web:
+    image: nginx:latest
+    working_dir: /code
+    restart: always
+    volumes:
+      - ./images/nginx/conf.d/dev.conf:/etc/nginx/conf.d/default.conf
+      - ./images/nginx/logs:/var/logs/nginx
+      - ../static:/static
+    ports:
+      - 80:80
+  api:
+    build: ./images/api
+    working_dir: /code
+    restart: always
+    volumes:
+      - ../api:/code
+      - ../admin-api:/api
+      - ../static:/static
+      - ./images/api/logs/:/usr/local/var/log/php
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - 3306:3306
+    volumes:
+      - db-test-3:/var/lib/mysql
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      timeout: 20s
+      retries: 10
+volumes:
+  db-test-3:

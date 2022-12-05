@@ -1,0 +1,75 @@
+{% extends "./layout.twig" %}
+
+{% block content %}
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <a href="/" class="col-6 header_link">Home</a>
+                <a href="/admin" class="col-6 header_link">Admin</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="slider_admin">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="admin_block">
+                        <h3>Slider</h3>
+                        <a href="/admin/api/slider" class="admin_link">View all slides</a>
+                    </div>
+                    <div class="admin_block">
+                        <h4>First slide</h4>
+                        <a href="/admin/api/slider/1" class="admin_link">Show</a><br>
+                        <a href="/admin/api/slider/1" class="admin_link">Edit</a><br>
+                        <a href="/admin/api/slider/1" class="admin_link">Delete</a><br>
+                    </div>
+                    <div class="admin_block">
+                        <h4>Second slide</h4>
+                        <a href="/admin/api/slider/2" class="admin_link">Show</a><br>
+                        <a href="/admin/api/slider/2" class="admin_link">Edit</a><br>
+                        <a href="/admin/api/slider/2" class="admin_link">Delete</a><br>
+                    </div>
+                    <div class="admin_block">
+                        <h4>Third slide</h4>
+                        <a href="/admin/api/slider/3" class="admin_link">Show</a><br>
+                        <a href="/admin/api/slider/3" class="admin_link">Edit</a><br>
+                        <a href="/admin/api/slider/3" class="admin_link">Delete</a><br>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="admin_block">
+                        <h3>Products</h3>
+                        <a href="/admin/api/products" class="admin_link">View all products</a>
+                    </div>
+                    <div class="admin_block">
+                        <h4>First product</h4>
+                        <a href="/admin/api/products/1" class="admin_link">Show</a><br>
+                        <a href="/admin/api/products/1" class="admin_link">Edit</a><br>
+                        <a href="/admin/api/products/1" class="admin_link">Delete</a><br>
+                    </div>
+                    <div class="admin_block">
+                        <h4>Second product</h4>
+                        <a href="/admin/api/products/2" class="admin_link">Show</a><br>
+                        <a href="/admin/api/products/2" class="admin_link">Edit</a><br>
+                        <a href="/admin/api/products/2" class="admin_link">Delete</a><br>
+                    </div>
+                    <div class="admin_block">
+                        <h4>Third product</h4>
+                        <a href="/admin/api/products/3" class="admin_link">Show</a><br>
+                        <a href="/admin/api/products/3" class="admin_link">Edit</a><br>
+                        <a href="/admin/api/products/3" class="admin_link">Delete</a><br>
+                    </div>
+                    <div class="admin_block">
+                        <h4>Fourth product</h4>
+                        <a href="/admin/api/products/4" class="admin_link">Show</a><br>
+                        <a href="/admin/api/products/4" class="admin_link">Edit</a><br>
+                        <a href="/admin/api/products/4" class="admin_link">Delete</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

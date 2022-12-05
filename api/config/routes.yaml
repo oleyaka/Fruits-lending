@@ -1,0 +1,10 @@
+user_index:
+    path: /
+    methods: GET
+    controller: App\Controller\IndexController::main
+
+admin_index:
+    path: /admin
+    methods: GET
+    controller: App\Controller\IndexController::admin
+
